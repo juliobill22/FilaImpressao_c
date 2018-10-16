@@ -82,7 +82,7 @@
             this.ckD.Location = new System.Drawing.Point(42, 93);
             this.ckD.Name = "ckD";
             this.ckD.Size = new System.Drawing.Size(34, 17);
-            this.ckD.TabIndex = 2;
+            this.ckD.TabIndex = 4;
             this.ckD.Text = "D";
             this.ckD.UseVisualStyleBackColor = true;
             // 
@@ -92,7 +92,7 @@
             this.ckE.Location = new System.Drawing.Point(42, 111);
             this.ckE.Name = "ckE";
             this.ckE.Size = new System.Drawing.Size(33, 17);
-            this.ckE.TabIndex = 3;
+            this.ckE.TabIndex = 5;
             this.ckE.Text = "E";
             this.ckE.UseVisualStyleBackColor = true;
             // 
@@ -102,7 +102,7 @@
             this.ckG.Location = new System.Drawing.Point(42, 147);
             this.ckG.Name = "ckG";
             this.ckG.Size = new System.Drawing.Size(34, 17);
-            this.ckG.TabIndex = 8;
+            this.ckG.TabIndex = 7;
             this.ckG.Text = "G";
             this.ckG.UseVisualStyleBackColor = true;
             // 
@@ -112,7 +112,7 @@
             this.ckF.Location = new System.Drawing.Point(42, 129);
             this.ckF.Name = "ckF";
             this.ckF.Size = new System.Drawing.Size(32, 17);
-            this.ckF.TabIndex = 9;
+            this.ckF.TabIndex = 6;
             this.ckF.Text = "F";
             this.ckF.UseVisualStyleBackColor = true;
             // 
@@ -122,7 +122,7 @@
             this.ckB.Location = new System.Drawing.Point(42, 57);
             this.ckB.Name = "ckB";
             this.ckB.Size = new System.Drawing.Size(33, 17);
-            this.ckB.TabIndex = 10;
+            this.ckB.TabIndex = 2;
             this.ckB.Text = "B";
             this.ckB.UseVisualStyleBackColor = true;
             // 
@@ -132,7 +132,7 @@
             this.ckC.Location = new System.Drawing.Point(42, 75);
             this.ckC.Name = "ckC";
             this.ckC.Size = new System.Drawing.Size(33, 17);
-            this.ckC.TabIndex = 11;
+            this.ckC.TabIndex = 3;
             this.ckC.Text = "C";
             this.ckC.UseVisualStyleBackColor = true;
             // 
@@ -142,7 +142,7 @@
             this.ckH.Location = new System.Drawing.Point(42, 165);
             this.ckH.Name = "ckH";
             this.ckH.Size = new System.Drawing.Size(34, 17);
-            this.ckH.TabIndex = 14;
+            this.ckH.TabIndex = 8;
             this.ckH.Text = "H";
             this.ckH.UseVisualStyleBackColor = true;
             // 
@@ -152,7 +152,7 @@
             this.ckI.Location = new System.Drawing.Point(96, 38);
             this.ckI.Name = "ckI";
             this.ckI.Size = new System.Drawing.Size(29, 17);
-            this.ckI.TabIndex = 15;
+            this.ckI.TabIndex = 9;
             this.ckI.Text = "I";
             this.ckI.UseVisualStyleBackColor = true;
             this.ckI.CheckedChanged += new System.EventHandler(this.ckI_CheckedChanged);
@@ -163,7 +163,7 @@
             this.ckS.Location = new System.Drawing.Point(149, 56);
             this.ckS.Name = "ckS";
             this.ckS.Size = new System.Drawing.Size(33, 17);
-            this.ckS.TabIndex = 24;
+            this.ckS.TabIndex = 18;
             this.ckS.Text = "S";
             this.ckS.UseVisualStyleBackColor = true;
             // 
@@ -173,7 +173,7 @@
             this.ckR.Location = new System.Drawing.Point(149, 38);
             this.ckR.Name = "ckR";
             this.ckR.Size = new System.Drawing.Size(34, 17);
-            this.ckR.TabIndex = 23;
+            this.ckR.TabIndex = 17;
             this.ckR.Text = "R";
             this.ckR.UseVisualStyleBackColor = true;
             // 
@@ -183,7 +183,7 @@
             this.ckM.Location = new System.Drawing.Point(96, 92);
             this.ckM.Name = "ckM";
             this.ckM.Size = new System.Drawing.Size(35, 17);
-            this.ckM.TabIndex = 22;
+            this.ckM.TabIndex = 12;
             this.ckM.Text = "M";
             this.ckM.UseVisualStyleBackColor = true;
             // 
@@ -193,7 +193,7 @@
             this.ckL.Location = new System.Drawing.Point(96, 74);
             this.ckL.Name = "ckL";
             this.ckL.Size = new System.Drawing.Size(32, 17);
-            this.ckL.TabIndex = 21;
+            this.ckL.TabIndex = 11;
             this.ckL.Text = "L";
             this.ckL.UseVisualStyleBackColor = true;
             // 
@@ -203,7 +203,7 @@
             this.ckP.Location = new System.Drawing.Point(96, 146);
             this.ckP.Name = "ckP";
             this.ckP.Size = new System.Drawing.Size(33, 17);
-            this.ckP.TabIndex = 20;
+            this.ckP.TabIndex = 15;
             this.ckP.Text = "P";
             this.ckP.UseVisualStyleBackColor = true;
             // 
@@ -213,7 +213,7 @@
             this.ckQ.Location = new System.Drawing.Point(96, 164);
             this.ckQ.Name = "ckQ";
             this.ckQ.Size = new System.Drawing.Size(34, 17);
-            this.ckQ.TabIndex = 19;
+            this.ckQ.TabIndex = 16;
             this.ckQ.Text = "Q";
             this.ckQ.UseVisualStyleBackColor = true;
             // 
@@ -223,7 +223,7 @@
             this.ckO.Location = new System.Drawing.Point(96, 128);
             this.ckO.Name = "ckO";
             this.ckO.Size = new System.Drawing.Size(34, 17);
-            this.ckO.TabIndex = 18;
+            this.ckO.TabIndex = 14;
             this.ckO.Text = "O";
             this.ckO.UseVisualStyleBackColor = true;
             // 
@@ -233,7 +233,7 @@
             this.ckN.Location = new System.Drawing.Point(96, 110);
             this.ckN.Name = "ckN";
             this.ckN.Size = new System.Drawing.Size(34, 17);
-            this.ckN.TabIndex = 17;
+            this.ckN.TabIndex = 13;
             this.ckN.Text = "N";
             this.ckN.UseVisualStyleBackColor = true;
             // 
@@ -243,7 +243,7 @@
             this.ckJ.Location = new System.Drawing.Point(96, 56);
             this.ckJ.Name = "ckJ";
             this.ckJ.Size = new System.Drawing.Size(31, 17);
-            this.ckJ.TabIndex = 16;
+            this.ckJ.TabIndex = 10;
             this.ckJ.Text = "J";
             this.ckJ.UseVisualStyleBackColor = true;
             // 
@@ -253,7 +253,7 @@
             this.ckT.Location = new System.Drawing.Point(149, 74);
             this.ckT.Name = "ckT";
             this.ckT.Size = new System.Drawing.Size(33, 17);
-            this.ckT.TabIndex = 25;
+            this.ckT.TabIndex = 19;
             this.ckT.Text = "T";
             this.ckT.UseVisualStyleBackColor = true;
             // 
@@ -263,7 +263,7 @@
             this.ckU.Location = new System.Drawing.Point(149, 92);
             this.ckU.Name = "ckU";
             this.ckU.Size = new System.Drawing.Size(34, 17);
-            this.ckU.TabIndex = 26;
+            this.ckU.TabIndex = 20;
             this.ckU.Text = "U";
             this.ckU.UseVisualStyleBackColor = true;
             // 
@@ -273,7 +273,7 @@
             this.ckV.Location = new System.Drawing.Point(149, 110);
             this.ckV.Name = "ckV";
             this.ckV.Size = new System.Drawing.Size(33, 17);
-            this.ckV.TabIndex = 27;
+            this.ckV.TabIndex = 21;
             this.ckV.Text = "V";
             this.ckV.UseVisualStyleBackColor = true;
             // 
@@ -283,7 +283,7 @@
             this.ckX.Location = new System.Drawing.Point(149, 128);
             this.ckX.Name = "ckX";
             this.ckX.Size = new System.Drawing.Size(33, 17);
-            this.ckX.TabIndex = 28;
+            this.ckX.TabIndex = 22;
             this.ckX.Text = "X";
             this.ckX.UseVisualStyleBackColor = true;
             // 
@@ -293,7 +293,7 @@
             this.ckW.Location = new System.Drawing.Point(149, 146);
             this.ckW.Name = "ckW";
             this.ckW.Size = new System.Drawing.Size(37, 17);
-            this.ckW.TabIndex = 29;
+            this.ckW.TabIndex = 23;
             this.ckW.Text = "W";
             this.ckW.UseVisualStyleBackColor = true;
             // 
@@ -303,7 +303,7 @@
             this.ckY.Location = new System.Drawing.Point(149, 164);
             this.ckY.Name = "ckY";
             this.ckY.Size = new System.Drawing.Size(33, 17);
-            this.ckY.TabIndex = 30;
+            this.ckY.TabIndex = 24;
             this.ckY.Text = "Y";
             this.ckY.UseVisualStyleBackColor = true;
             // 
@@ -313,7 +313,7 @@
             this.ckZ.Location = new System.Drawing.Point(207, 38);
             this.ckZ.Name = "ckZ";
             this.ckZ.Size = new System.Drawing.Size(33, 17);
-            this.ckZ.TabIndex = 31;
+            this.ckZ.TabIndex = 25;
             this.ckZ.Text = "Z";
             this.ckZ.UseVisualStyleBackColor = true;
             // 
@@ -322,7 +322,7 @@
             this.btnGravar.Location = new System.Drawing.Point(79, 197);
             this.btnGravar.Name = "btnGravar";
             this.btnGravar.Size = new System.Drawing.Size(75, 23);
-            this.btnGravar.TabIndex = 32;
+            this.btnGravar.TabIndex = 26;
             this.btnGravar.Text = "Gravar";
             this.btnGravar.UseVisualStyleBackColor = true;
             // 
@@ -331,7 +331,7 @@
             this.btnFechar.Location = new System.Drawing.Point(165, 197);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(75, 23);
-            this.btnFechar.TabIndex = 33;
+            this.btnFechar.TabIndex = 27;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);

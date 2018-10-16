@@ -12,9 +12,15 @@ namespace FilaImpressao
 {
     public partial class frmListImpressao : Form
     {
+
+        private List<Impressora> ListaImpressao;
+
         public frmListImpressao()
         {
             InitializeComponent();
+            if (ListaImpressao == null) {
+                ListaImpressao = new List<Impressora>();
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -24,13 +30,13 @@ namespace FilaImpressao
 
         private void cadImpress_Click(object sender, EventArgs e)
         {
-            var frm = new frmCadImpressora();
+            var frm = new frmCadImpressora(ListaImpressao);
             frm.Show();
         }
 
         private void cadLetra_Click(object sender, EventArgs e)
         {
-            var frm = new frmCadLetras();
+            var frm = new frmCadLetras(ListaImpressao);
             frm.Show();
         }
     }

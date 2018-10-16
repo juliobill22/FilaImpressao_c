@@ -19,3 +19,6 @@ C:\Users\Liziana\source\repos\FilaImpressao\FilaImpressao_c\obj\Debug\FilaImpres
 C:\Users\Liziana\source\repos\FilaImpressao\FilaImpressao_c\obj\Debug\FilaImpressao.csproj.CoreCompileInputs.cache
 C:\Users\Liziana\source\repos\FilaImpressao\FilaImpressao_c\obj\Debug\FilaImpressao.exe
 C:\Users\Liziana\source\repos\FilaImpressao\FilaImpressao_c\obj\Debug\FilaImpressao.pdb
+C:\Users\Liziana\source\repos\FilaImpressao\FilaImpressao_c\bin\Debug\FilaImpressao.exe.config
+C:\Users\Liziana\source\repos\FilaImpressao\FilaImpressao_c\bin\Debug\FilaImpressao.exe
+C:\Users\Liziana\source\repos\FilaImpressao\FilaImpressao_c\bin\Debug\FilaImpressao.pdb
