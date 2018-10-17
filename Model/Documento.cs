@@ -6,25 +6,21 @@ namespace FilaImpressao
 {
 	public class Documento
 	{
-		int CodigoFila;
-		int Letras;
+		private int CodigoFila;
+        private List<Char> Letras;
 
-		public Documento()
-		{
-			throw new NotImplementedException();
-		}
+        public Documento()
+        {
+        }
 
-		~Documento()
-		{
-			throw new NotImplementedException();
-		}
+        public Documento(int codigoFila, List<Char> letras)
+        {
+            CodigoFila = codigoFila;
+            Letras = letras;
+        }
 
         public int CodigoFila1 { get => CodigoFila; set => CodigoFila = value; }
-        public int Letras1 { get => Letras; set => Letras = value; }
+        public List<Char> Letras1 { get => Letras; set => Letras = value; }
 
-        public void addLetra()
-		{
-			throw new NotImplementedException();
-		}
-	}
+    }
 }

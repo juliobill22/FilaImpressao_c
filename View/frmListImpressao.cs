@@ -14,7 +14,7 @@ namespace FilaImpressao
     {
 
         private List<Impressora> ListaImpressao;
-
+        
         public frmListImpressao()
         {
             InitializeComponent();
@@ -30,14 +30,19 @@ namespace FilaImpressao
 
         private void cadImpress_Click(object sender, EventArgs e)
         {
-            var frm = new frmCadImpressora(ListaImpressao);
-            frm.Show();
+            var frm = new frmCadImpressora(dataGridView1, ListaImpressao);
+            frm.ShowDialog();
         }
 
         private void cadLetra_Click(object sender, EventArgs e)
         {
             var frm = new frmCadLetras(ListaImpressao);
-            frm.Show();
+            frm.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.Clear();
         }
     }
 }

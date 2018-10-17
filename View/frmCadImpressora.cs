@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FilaImpressao.Model;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -7,10 +8,13 @@ namespace FilaImpressao
     public partial class frmCadImpressora : Form
     {
         private List<Impressora> ListaImpressao;
+        private DataGridView Grid;
 
-        public frmCadImpressora(List<Impressora> lst)
+        public frmCadImpressora(DataGridView grid, List<Impressora> lst)
         {
             InitializeComponent();
+
+            this.Grid = grid;
             this.ListaImpressao = lst;
         }
 
@@ -21,24 +25,19 @@ namespace FilaImpressao
 
         private void btnGravar_Click(object sender, EventArgs e)
         {
-
-            if ((cpCodigo.Text == null) && (cbNome.Text == null) && (cbTempo.Text == null)) {
+            if ((cpCodigo.Text != null) && (cbNome.Text != null) && (cbTempo.Text != null)) {
 
                 Impressora _impressora = new Impressora();
 
-                string strValue;
-                int intValue;
+                string strCodigo, strTempo;
 
-                strValue = cpCodigo.Text;
-                intValue = Convert.ToInt32(strValue);
-                _impressora.Codigo = intValue;
-
+                strCodigo = cpCodigo.Text;
+                _impressora.Codigo = Convert.ToInt32(strCodigo);
                 _impressora.Nome = cbNome.Text;
-
-                strValue = cbTempo.Text;
-                intValue = Convert.ToInt32(strValue);
-                _impressora.Tempo = intValue;
-
+                _impressora.DataCriacao = DateTime.Now;
+                _impressora.Status = 'S';
+                strTempo = cbTempo.Text;
+                _impressora.Tempo = Convert.ToInt32(strTempo);
                 ListaImpressao.Add(_impressora);
 
                 MessageBox.Show("Impressora cadastrada com sucesso!");
@@ -49,10 +48,16 @@ namespace FilaImpressao
 
                 cpCodigo.Focus();
 
-            } else
-            {
+            } else {
+
                 MessageBox.Show("Para gravar, preencha todos os dados.");
+
             }
+
+            Grid gd = new Grid(this.Grid, ListaImpressao);
+            gd.gerarGrid();
+
+
         }
     }
 }
