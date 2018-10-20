@@ -157,7 +157,6 @@
             this.ckI.TabIndex = 9;
             this.ckI.Text = "I";
             this.ckI.UseVisualStyleBackColor = true;
-            this.ckI.CheckedChanged += new System.EventHandler(this.ckI_CheckedChanged);
             // 
             // ckS
             // 

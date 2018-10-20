@@ -36,7 +36,7 @@ namespace FilaImpressao
 
         private void cadLetra_Click(object sender, EventArgs e)
         {
-            var frm = new frmCadLetras(ListaImpressao);
+            var frm = new frmCadLetras(dataGridView1, ListaImpressao);
             frm.ShowDialog();
         }
 

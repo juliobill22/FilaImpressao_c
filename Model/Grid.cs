@@ -11,6 +11,7 @@ namespace FilaImpressao.Model
     {
         private DataGridView Gd;
         private List<Impressora> Impressoras;
+        private string getLetras;
 
         public List<Impressora> Impressoras1 { get => Impressoras; set => Impressoras = value; }
 
@@ -39,6 +40,7 @@ namespace FilaImpressao.Model
                 Gd.Columns.Add("clDtCriacao", "Data Criação");
                 Gd.Columns.Add("clStatus", "Status");
                 Gd.Columns.Add("clTempo", "Tempo");
+                Gd.Columns.Add("clDocList", "Docs. Fila");
             }
 
             Gd.Rows.Clear();
@@ -48,10 +50,13 @@ namespace FilaImpressao.Model
                                  ,Convert.ToString(Impressoras[i].Nome)
                                  ,Convert.ToString(Impressoras[i].Status)
                                  ,Convert.ToString(Impressoras[i].Tempo)
-                                 ,Convert.ToString(Impressoras[i].DataCriacao)};
+                                 ,Convert.ToString(Impressoras[i].DataCriacao)
+                                 ,Convert.ToString(Impressoras[i].getLetras(i))
+                                };
                 Gd.Rows.Add(row0);
             }
             Gd.Refresh();
         }
+
     }
 }

@@ -20,6 +20,9 @@ namespace FilaImpressao
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
+            Grid gd = new Grid(this.Grid, ListaImpressao);
+            gd.gerarGrid();
+
             this.Close();
         }
 
@@ -53,11 +56,6 @@ namespace FilaImpressao
                 MessageBox.Show("Para gravar, preencha todos os dados.");
 
             }
-
-            Grid gd = new Grid(this.Grid, ListaImpressao);
-            gd.gerarGrid();
-
-
         }
     }
 }

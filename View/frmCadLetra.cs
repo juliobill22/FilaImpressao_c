@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FilaImpressao.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,37 +13,76 @@ namespace FilaImpressao
 {
     public partial class frmCadLetras : Form
     {
-        List<Impressora> lstLocal;
+        private List<Impressora> ListaImpressao;
+        private DataGridView GdDataGridView;
 
-        public frmCadLetras(List<Impressora> lst)
+        public frmCadLetras(DataGridView grid, List<Impressora> lst)
         {
             InitializeComponent();
-            lstLocal = lst;
 
-            if (lst != null) { 
-                if (lst.Count > 0) { 
-                    for (int i = 0; i < lst.Count; i++)
-                        comboBox1.Items.Add(lst[i].Codigo.ToString() + " - " + lst[i].Nome);
+            this.GdDataGridView = grid;
+            this.ListaImpressao = lst;
+
+            if (this.ListaImpressao != null)
+            {
+                if (this.ListaImpressao.Count > 0)
+                {
+                    for (int i = 0; i < this.ListaImpressao.Count; i++)
+                        comboBox1.Items.Add(this.ListaImpressao[i].Codigo.ToString() + " - " + this.ListaImpressao[i].Nome);
                 }
             }
 
         }
-
-        private void ckI_CheckedChanged(object sender, EventArgs e)
-        {
-        }
-
+        
         private void btnFechar_Click(object sender, EventArgs e)
         {
+            Grid grd = new Grid(GdDataGridView, this.ListaImpressao);
+            grd.gerarGrid();
             this.Close();
         }
 
         private void btnGravar_Click(object sender, EventArgs e)
         {
 
-            Documento doc = new Documento();
+            Documento doc     = new Documento();
             List<Char> letras = new List<char>();
 
+            addCheks(letras);
+            doc.CodigoFila1   = ListaImpressao[comboBox1.SelectedIndex].DocsFila.Count + 1;
+            doc.Letras1       = letras;
+
+            if (ListaImpressao.Count > 0)
+            {
+                ListaImpressao[comboBox1.SelectedIndex].DocsFila.Add(doc);
+            }
+            clearChecks();
+
+            if (ListaImpressao.Count == 0)
+            {
+                MessageBox.Show("Primeiramente, cadastre uma impressora na outra tela.");
+
+            }
+            else if (comboBox1.Text == "")
+            {
+                MessageBox.Show("Selecione a impressora!");
+                comboBox1.Focus();
+
+            }
+            else
+            {
+                if (letras.Count > 0)
+                {
+                    MessageBox.Show("Letra gravada com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Informe a(s) letra(s) que serão gravadas!");
+                }
+            }
+        }
+
+        private void addCheks(List<Char> letras)
+        {
             if (ckA.Checked == true) { letras.Add('A'); }
             if (ckB.Checked == true) { letras.Add('B'); }
             if (ckC.Checked == true) { letras.Add('C'); }
@@ -68,9 +108,10 @@ namespace FilaImpressao
             if (ckZ.Checked == true) { letras.Add('Z'); }
             if (ckW.Checked == true) { letras.Add('W'); }
             if (ckY.Checked == true) { letras.Add('Y'); }
+        }
 
-            doc.Letras1 = letras;
-
+        private void clearChecks()
+        {
             ckA.Checked = false;
             ckB.Checked = false;
             ckC.Checked = false;
@@ -96,28 +137,6 @@ namespace FilaImpressao
             ckZ.Checked = false;
             ckW.Checked = false;
             ckY.Checked = false;
-
-            if (lstLocal.Count == 0)
-            {
-                MessageBox.Show("Primeiramente, cadastre uma impressora na outra tela.");
-
-            } else if (comboBox1.Text == "")
-            {
-                MessageBox.Show("Selecione a impressora!");
-                comboBox1.Focus();
-
-            }
-            else
-            {
-                if (letras.Count > 0)
-                {
-                    MessageBox.Show("Letra gravada com sucesso!");
-                }
-                else
-                {
-                    MessageBox.Show("Informe a(s) letra(s) que serão gravadas!");
-                }
-            }
         }
     }
 }
